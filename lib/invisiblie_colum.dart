@@ -13,23 +13,43 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Colum"),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        // body: Column(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   crossAxisAlignment: CrossAxisAlignment.start,
+        //   children: [
+        //     Container(
+        //       width: 200,
+        //       height: 50,
+        //       color: Colors.amber,
+        //     ),
+        //     Container(
+        //       width: 230,
+        //       height: 50,
+        //       color: Color.fromARGB(255, 190, 108, 60),
+        //     ),
+        //     Container(
+        //       width: 100,
+        //       height: 50,
+        //       color: Color.fromARGB(255, 80, 151, 153),
+        //     )
+        //   ],
+        // ),
+        body: Stack(
+          //bertumpuk kedepan
           children: [
             Container(
               width: 200,
-              height: 50,
+              height: 55,
               color: Colors.amber,
             ),
             Container(
-              width: 230,
-              height: 50,
+              width: 180,
+              height: 53,
               color: Color.fromARGB(255, 190, 108, 60),
             ),
             Container(
-              width: 100,
-              height: 50,
+              width: 140,
+              height: 49,
               color: Color.fromARGB(255, 80, 151, 153),
             )
           ],

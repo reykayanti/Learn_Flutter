@@ -46,12 +46,17 @@ class MyApp extends StatelessWidget {
             List favColor = data['favColor'];
             return Card(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(padding: EdgeInsets.all(10)),
                   Row(
                     children: [
                       CircleAvatar(),
+                      SizedBox(
+                        width: 20,
+                      ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           // Text("Name : ${data['name']}"),
                           Text("Name : " + data['name']),

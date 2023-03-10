@@ -61,15 +61,18 @@ class MyApp extends StatelessWidget {
                       )
                     ],
                   ),
-                  Row(
-                    children: favColor.map((color) {
-                      return Container(
-                        child: Text(color),
-                        color: Colors.amber,
-                        margin: EdgeInsets.all(10),
-                        padding: EdgeInsets.all(10),
-                      );
-                    }).toList(),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: favColor.map((color) {
+                        return Container(
+                          child: Text(color),
+                          color: Colors.amber,
+                          margin: EdgeInsets.all(10),
+                          padding: EdgeInsets.all(10),
+                        );
+                      }).toList(),
+                    ),
                   ),
                 ],
               ),
